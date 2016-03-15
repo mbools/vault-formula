@@ -6,7 +6,7 @@ vault-dependencies:
 
 vault-install-dir:
   file.directory:
-    - name: /usr/local/bin:
+    - name: /usr/local/bin
     - makedirs: True
 
 # Create vault user
