@@ -1,10 +1,11 @@
 {% from "vault/map.jinja" import vault with context %}
 
 vault-dependencies:
-  pkg.installed
+  pkg.installed:
     - name: unzip
 
 vault-install-dir:
+  file.directory:
     - name: /usr/local/bin:
     - makedirs: True
 
